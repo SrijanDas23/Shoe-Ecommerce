@@ -13,7 +13,7 @@ const ShoppingList = () => {
   const [value, setValue] = useState("all");
   const items = useSelector((state) => state.cart.items);
   const breakPoint = useMediaQuery("(min-width:600px)");
-  console.log("items", items);
+  // console.log("items", items);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -26,7 +26,7 @@ const ShoppingList = () => {
     const itemsJson = await items.json();
     dispatch(setItems(itemsJson.data));
   }
-  console.log("items", items);
+  // console.log("items", items);
 
   useEffect(() => {
     getItems();
