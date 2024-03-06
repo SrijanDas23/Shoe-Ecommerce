@@ -43,7 +43,7 @@ const ShoppingList = () => {
   );
   return (
     <Box width="80%" margin="80px auto">
-      <Typography variant="h3" textAlign="center">
+      <Typography variant="h2" textAlign="center">
         Our Featured <b>Products</b>
       </Typography>
       <Tabs
@@ -60,10 +60,18 @@ const ShoppingList = () => {
           },
         }}
       >
-        <Tab label="ALL" value="all" />
-        <Tab label="NEW ARRIVALS" value="newArrivals" />
-        <Tab label="BEST SELLERS" value="bestSellers" />
-        <Tab label="TOP RATED" value="topRated" />
+        <Tab label="ALL" value="all" sx={{ fontSize: "0.9rem" }} />
+        <Tab
+          label="NEW ARRIVALS"
+          value="newArrivals"
+          sx={{ fontSize: "0.9rem" }}
+        />
+        <Tab
+          label="BEST SELLERS"
+          value="bestSellers"
+          sx={{ fontSize: "0.9rem" }}
+        />
+        <Tab label="TOP RATED" value="topRated" sx={{ fontSize: "0.9rem" }} />
       </Tabs>
       <Box
         margin="0 auto"

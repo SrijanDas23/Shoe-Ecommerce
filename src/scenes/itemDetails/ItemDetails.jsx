@@ -115,7 +115,6 @@ const ItemDetails = () => {
                 minWidth: "150px",
                 padding: "10px 40px",
               }}
-              onClick={() => dispatch(addToCart({ item: { ...item, count } }))}
             >
               ADD TO CART
             </Button>

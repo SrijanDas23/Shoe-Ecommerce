@@ -26,7 +26,7 @@ const MainCarousel = () => {
     <Carousel
       infiniteLoop={true}
       showThumbs={false}
-      showIndicators={false}
+      showIndicators={true}
       showStatus={false}
       renderArrowPrev={(onClickHandler, hasPrev, label) => (
         <IconButton
@@ -85,13 +85,13 @@ const MainCarousel = () => {
             maxWidth={isNonMobile ? undefined : "240px"}
           >
             <Typography color={shades.secondary[200]}>-- NEW ITEMS</Typography>
-            <Typography variant="h1">Summer Sale</Typography>
+            <Typography variant="h1">Festival Sale</Typography>
             <Typography
               fontWeight="bold"
               color={shades.secondary[300]}
               sx={{ textDecoration: "underline" }}
             >
-              Discover More
+              Massive Discounts!
             </Typography>
           </Box>
         </Box>

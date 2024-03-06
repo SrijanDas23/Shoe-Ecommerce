@@ -67,9 +67,6 @@ const Item = ({ item, width }) => {
 
             {/* button */}
             <Button
-              onClick={() => {
-                dispatch(addToCart({ item: { ...item, count } }));
-              }}
               sx={{ backgroundColor: shades.primary[300], color: "white" }}
             >
               Add to Cart
@@ -86,7 +83,7 @@ const Item = ({ item, width }) => {
                 .replace(/^./, (str) => str.toUpperCase())
             : "Category Not Available"}
         </Typography>
-        <Typography>{name}</Typography>
+        <Typography fontSize="0.9rem">{name}</Typography>
         <Typography fontWeight="bold">${price}</Typography>
       </Box>
     </Box>
